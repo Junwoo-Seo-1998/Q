@@ -1,0 +1,16 @@
+1 5 true
+PlayerRocketWalkAttack 0 0 40 42 0.1
+PlayerRocketWalkAttack 40 0 60 42 0.1
+PlayerRocketWalkAttack 100 0 60 42 0.1
+PlayerRocketWalkAttack 160 0 60 42 0.1
+PlayerRocketWalkAttack 220 0 40 42 0.1
+PlayerRocketWalk 0 0 40 42 0.1
+PlayerRocketWalk 40 0 40 42 0.1
+PlayerRocketWalk 80 0 40 42 0.1
+PlayerRocketWalk 120 0 40 42 0.1
+PlayerRocketWalk 160 0 40 42 0.1
+PlayerRocketWalk 200 0 40 42 0.1
+PlayerRocketWalk 240 0 60 42 0.1
+PlayerRocketWalk 300 0 60 42 0.1
+PlayerRocketWalk 360 0 40 42 0.1
+PlayerRocketWalk 400 0 40 42 0.1

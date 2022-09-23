@@ -1,0 +1,471 @@
+i# ------------------------------
+# Formats
+# ------------------------------
+# 1. Shader Programs
+# shaderprogram	<name>	[name of shaders...]
+# ex) shaderprogram	DefaultShaderProgram	DefaultFragmentShader	DefaultVertexShader
+#
+# 2. Shaders
+# shader <name> <shader type> <path>
+# Possible values for `shader type` can be found in Shader.h; Use the same word as the enumerators
+# ex) shader	VERTEX_SHADER	DefaultVertexshader	resource/shader/vtx.vert
+#
+# 3. All the others
+# <type> <name> <path>
+# `type` is one of: mesh | texture | animation | font | script
+# ex) mesh	SquareMesh		resource/mesh/square.msh
+# ------------------------------
+# Notes
+# ------------------------------
+# 1. Shaders used in shader programs must be pre-initialized
+# 2. Textures used in animations must be pre-initialized
+# 3. Tokens can be separated by any amount and any type of whitespaces
+#		This also means there can by no whitespace within a token
+# 4. A line should be either of
+#		I. a resource register or
+#		II. a comment which starts with # or
+#		III. a blank line with no whitespaces other than \n
+# 5. Any resource registering line can be followed by a comment starting with #
+# ------------------------------
+
+
+
+# ------------------------------
+# Meshes
+# ------------------------------
+mesh	SquareMesh					resource/mesh/square.msh
+mesh	HollowSquareMesh			resource/mesh/hollow_square.msh
+#mesh	CircleMesh					resource/mesh/circle.msh
+#mesh	HollowCircleMesh			resource/mesh/hollow_circle.msh
+
+
+# ------------------------------
+# Shaders
+# ------------------------------
+shader	DefaultTextureVertexShader			VERTEX_SHADER		resource/shader/texture.vert
+shader	DefaultTextureFragmentShader		FRAGMENT_SHADER		resource/shader/texture.frag
+
+shader	DefaultColorVertexShader			VERTEX_SHADER		resource/shader/color.vert
+shader	DefaultColorFragmentShader			FRAGMENT_SHADER		resource/shader/color.frag
+
+
+
+shader	DefaultTextVertexShader				VERTEX_SHADER		resource/shader/text.vert
+shader	DefaultTextFragmentShader			FRAGMENT_SHADER		resource/shader/text.frag
+shader	ComplementaryTextFragmentShader			FRAGMENT_SHADER		resource/shader/complementText.frag
+
+# ------------------------------
+# Shader Programs
+# ------------------------------
+shaderprogram	DefaultTextureShaderProgram		DefaultTextureVertexShader		DefaultTextureFragmentShader
+shaderprogram	DefaultColorShaderProgram		DefaultColorVertexShader		DefaultColorFragmentShader
+shaderprogram	ComplementaryTextShaderProgram	DefaultTextVertexShader		ComplementaryTextFragmentShader
+shaderprogram	DefaultTextShaderProgram		DefaultTextVertexShader			DefaultTextFragmentShader
+
+
+# ------------------------------
+# Textures
+# ------------------------------
+# texture		None				resource/texture/test.png
+
+# BG
+texture		OptionBg					resource/texture/UI/Options.png
+
+# UI
+texture 	MenuBox				resource/texture/UI/boxes.png
+texture 	MenuBoxInteract			resource/texture/UI/boxes1.png
+texture 	Checked				resource/texture/UI/Checked.png
+texture 	UnChecked			resource/texture/UI/UnChecked.png
+texture 	SliderLayer				resource/texture/UI/SliderLayer.png
+texture 	Slide			resource/texture/UI/Slide.png
+
+texture 	InGameMenuBackLayer		resource/texture/UI/InGameBackLayer.png
+texture 	InGameUIBackLayer		resource/texture/UI/InGameUIBackLayer.png
+texture    	PlayerHealthBar			resource/texture/UI/healthbar.png
+texture    	PlayerHealthBarLayer		resource/texture/UI/healthbar_layer.png
+
+texture 	GameOver				resource/texture/UI/GameOver.png
+texture 	GameEnding				resource/texture/UI/Ending.png
+texture 	TitleImage				resource/texture/UI/NoFleximage.png
+texture 	CreditScreen				resource/texture/UI/CreditScreen.png
+texture 	HowToPlay				resource/texture/UI/HowToPlay.png
+
+texture 	KeyBoardLayout				resource/texture/UI/KeyBoardLayout.png
+texture	Q_Logo					resource/texture/UI/Q_logo.png
+texture 	fmod_logo				resource/texture/UI/fmod_logo.png
+texture	digipen_logo				resource/texture/UI/digipen.png
+texture	Waitstate					resource/texture/UI/Waitstate.png
+texture   CubePiece				resource/texture/UI/CollectCube.png
+
+texture 	Credit2					resource/texture/UI/Credit2.png
+texture 	Credit3					resource/texture/UI/Credit3.png
+texture 	Credit4					resource/texture/UI/Credit4.png
+texture 	Credit5					resource/texture/UI/Credit5.png
+texture 	Credit6					resource/texture/UI/Credit6.png
+
+# How to Play
+
+texture 	MoveKey				resource/texture/UI/HowtoPlay/how1.png
+texture 	JumpKey				resource/texture/UI/HowtoPlay/how2.png
+texture 	PickKey				resource/texture/UI/HowtoPlay/how3.png
+texture 	SwapWeapon			resource/texture/UI/HowtoPlay/how4.png
+texture 	Attack				resource/texture/UI/HowtoPlay/how5.png
+texture 	PickBomb				resource/texture/UI/HowtoPlay/how6.png
+texture 	UseItem				resource/texture/UI/HowtoPlay/how7.png
+texture 	SwapItem				resource/texture/UI/HowtoPlay/how8.png
+texture 	GetPortal			resource/texture/UI/HowtoPlay/how9.png
+texture 	MoveSlide			resource/texture/UI/HowtoPlay/how10.png
+
+# Logos
+
+texture		TestJpg					resource/texture/b.jpg
+texture		TestPng					resource/texture/test.png
+
+texture 	Q						resource/texture/sampleq6.png
+
+# Icon Sheets
+texture		IconSheet1				resource/texture/IconSheet1.png
+texture		IconSheet2				resource/texture/IconSheet2.png
+texture		IconSheet3				resource/texture/IconSheet3.png
+
+# TileSets
+texture		PotalTile					resource/texture/potaltile.png
+texture		Portal					resource/texture/UI/PortalSheet.png
+texture		EndPortal					resource/texture/UI/GreenPortalSheet.png
+
+# Weapons
+texture		DaggerIcon				resource/texture/weapon/sword_icon.png
+
+texture		Gun					resource/texture/weapon/gun.png
+texture		Missile					resource/texture/weapon/missile.png
+texture		Missile-Left				resource/texture/weapon/missile-left.png
+texture		Rocket					resource/texture/weapon/launcher.png
+texture		RocketIcon				resource/texture/weapon/launcher_icon.png
+texture		Shotguncanister				resource/texture/shotguncanister.png
+texture		ShotGunIcon				resource/texture/weapon/gun_icon2.png
+
+# Items
+texture		Bomb					resource/texture/item/bomb.png
+texture		PoisonBomb				resource/texture/item/poison_bomb.png
+
+texture		ExplodePurple				resource/texture/explode/explodepurple.png
+texture		ExplodeVertical				resource/texture/explode/explodevertical.png
+texture		ExplodeVerticalPoison			resource/texture/explode/explodevertical_poison.png
+texture		ExplodeVerticalFlame			resource/texture/explode/explodevertical_flame.png
+texture		ExplodeRoundGreen1			resource/texture/explode/exploderoundgreen1.png
+texture		ExplodeRoundGreen2			resource/texture/explode/exploderoundgreen2.png
+texture		ExplodeRoundGreen3			resource/texture/explode/exploderoundgreen3.png
+texture		ExplodeRoundGreen4			resource/texture/explode/exploderoundgreen4.png
+texture		ExplodeVerticalSmalla			resource/texture/explode/explodeverticalsmalla.png
+
+texture		ConsumeGreen				resource/texture/FX/Consume0.png
+texture		ConsumeBlue				resource/texture/FX/Consume1.png
+
+texture		Poison					resource/texture/FX/Poison.png
+
+texture		Cube					resource/texture/item/Cube.png
+
+# Enemies
+texture		PyoChang					resource/texture/Enemy/PyoChang.png
+texture		Bullet					resource/texture/Enemy/Bullet_anim.png
+texture		PlayerBullet1				resource/texture/bullet.png
+
+texture		WarriorWalking			resource/texture/Enemy/Warrior/Warrior_walk.png
+texture		WarriorAttacking		resource/texture/Enemy/Warrior/Warrior_attack.png
+texture		WarriorHurting			resource/texture/Enemy/Warrior/Warrior_hurt.png
+texture		WarriorDying			resource/texture/Enemy/Warrior/Warrior_death.png
+
+texture		TankerWalking			resource/texture/Enemy/Tanker/Tanker_walk.png
+texture		TankerArming			resource/texture/Enemy/Tanker/Tanker_prep.png
+texture		TankerDisarming			resource/texture/Enemy/Tanker/Tanker_finish.png
+texture		TankerAttacking			resource/texture/Enemy/Tanker/Tanker_attack.png
+texture		TankerHurting			resource/texture/Enemy/Tanker/Tanker_hit.png
+texture		TankerDying				resource/texture/Enemy/Tanker/Tanker_death.png
+
+texture		ScoutWalking			resource/texture/Enemy/Scout/Scout_idle.png
+texture		ScoutAttacking			resource/texture/Enemy/Scout/Scout_attack.png
+texture		ScoutHurting			resource/texture/Enemy/Scout/Scout_tele.png
+texture		ScoutDying				resource/texture/Enemy/Scout/Scout_death.png
+
+# EnemiesBigBoy
+texture		BigBoyAttack			resource/texture/Enemy/BigBoy/attack.png
+texture		BigBoyDeath			resource/texture/Enemy/BigBoy/death.png
+texture		BigBoyHurt			resource/texture/Enemy/BigBoy/hurt.png
+texture		BigBoyIdle			resource/texture/Enemy/BigBoy/idle.png
+texture		BigBoyHurt			resource/texture/Enemy/BigBoy/hurt.png
+texture		BigBoyWalk			resource/texture/Enemy/BigBoy/walk.png
+
+# EnemiesEngineer
+texture		EngineerAttack			resource/texture/Enemy/Engineer/attack.png
+texture		EngineerDeath			resource/texture/Enemy/Engineer/death.png
+texture		EngineerHurt			resource/texture/Enemy/Engineer/hurt.png
+texture		EngineerIdle			resource/texture/Enemy/Engineer/idle.png
+texture		EngineerJump			resource/texture/Enemy/Engineer/jump.png
+texture		EngineerWalk			resource/texture/Enemy/Engineer/walk.png
+texture		Summon				resource/texture/Enemy/Engineer/summon.png
+texture		SummonBigBoy			resource/texture/Enemy/Engineer/summonbigboy.png
+
+# EnemiesEngineer
+texture		FlamethrowerBotAttack		resource/texture/Enemy/FlamethrowerBot/attack.png
+texture		FlamethrowerBotDeath		resource/texture/Enemy/FlamethrowerBot/death.png
+texture		FlamethrowerBotHurt		resource/texture/Enemy/FlamethrowerBot/hurt.png
+texture		FlamethrowerBotIdle		resource/texture/Enemy/FlamethrowerBot/idle.png
+texture		FlamethrowerBotPrepAttack		resource/texture/Enemy/FlamethrowerBot/prepattack.png
+texture		FlamethrowerBotWalk		resource/texture/Enemy/FlamethrowerBot/run.png
+
+# Wardroid
+texture		WardroidAttack			resource/texture/Enemy/Wardroid/attack.png
+texture		WardroidDeath			resource/texture/Enemy/Wardroid/death.png
+texture		WardroidHurt			resource/texture/Enemy/Wardroid/hit.png
+texture		WardroidIdle			resource/texture/Enemy/Wardroid/idle.png
+texture		WardroidWake			resource/texture/Enemy/Wardroid/Wake.png
+texture		WardroidWalk			resource/texture/Enemy/Wardroid/walk.png
+
+# Assassin
+texture		AssassinAttack			resource/texture/Enemy/Assassin/attack.png
+texture		AssassinDeath			resource/texture/Enemy/Assassin/dead.png
+texture		AssassinHurt			resource/texture/Enemy/Assassin/hurt.png
+texture		AssassinIdle			resource/texture/Enemy/Assassin/idle.png
+texture		AssassinWalk			resource/texture/Enemy/Assassin/run.png
+texture		AssassinTelePort			resource/texture/Enemy/Assassin/teleport.png
+
+texture     PlayerGunIdle           resource/texture/Player/gun_idle.png
+texture     PlayerGunWalk           resource/texture/Player/gun_run.png
+texture     PlayerGunJumping       	resource/texture/Player/gun_jump.png
+texture     PlayerGunIdleAttack     resource/texture/Player/gun_shoot_idle.png
+texture     PlayerGunWalkAttack     resource/texture/Player/gun_shoot_run.png
+texture   	PlayerDaggerIdle       	resource/texture/Player/sword_idle.png
+texture     PlayerDaggerWalk       	resource/texture/Player/sword_run.png
+texture     PlayerDaggerJumping     resource/texture/Player/sword_jump.png
+texture     PlayerDaggerIdleAttack  resource/texture/Player/sword_attack.png
+texture	    PlayerDaggerClimbing    resource/texture/Player/sword_climbing.png
+texture	    PlayerIsDead	    resource/texture/Player/sword_dead.png
+texture	    PlayerDaggerJumpAttack	resource/texture/Player/sword_jumpattack.png
+texture	    PlayerDaggerSlideRunning 	resource/texture/Player/sword_slide_run.png
+texture	    PlayerDaggerIdleAttack1	resource/texture/Player/sword_attack2.png
+texture	    PlayerGunSlideRunning	resource/texture/Player/gun_slide.png
+texture	    PlayerGunSlideRunningAttack	resource/texture/Player/gun_slideattck.png
+texture	    PlayerGunDive		resource/texture/Player/gun_dive.png
+texture	    PlayerDaggerDive		resource/texture/Player/sword_dive.png
+texture	    PlayerShotGunIdle		resource/texture/Player/shotgun_idle.png
+texture	    PlayerShotGunIdleAttack		resource/texture/Player/shotgun_shoot_idle.png
+texture	    PlayerShotGunJumping		resource/texture/Player/shotgun_jump.png
+texture	    PlayerShotGunWalk		resource/texture/Player/shotgun_run.png
+texture	    PlayerShotGunWalkAttack		resource/texture/Player/shotgun_run_shoot.png
+texture	    PlayerShotGunSlideRunning		resource/texture/Player/shotgun_slide.png
+texture	    PlayerShotGunSlideRunningAttack		resource/texture/Player/shotgun_slideattack.png
+texture	    PlayerShotGunDive		resource/texture/Player/shotgun_dive.png
+
+texture	    PlayerRocketIdle		resource/texture/Player/launcher_idle.png
+texture	    PlayerRocketIdleAttack		resource/texture/Player/launcher_shoot_idle.png
+texture	    PlayerRocketJumping		resource/texture/Player/launcher_jump.png
+texture	    PlayerRocketWalk		resource/texture/Player/launcher_run.png
+texture	    PlayerRocketWalkAttack		resource/texture/Player/launcher_run_shoot.png
+texture	    PlayerRocketSlideRunning		resource/texture/Player/launcher_slide.png
+texture	    PlayerRocketSlideRunningAttack		resource/texture/Player/launcher_slideattack.png
+texture	    PlayerRocketDive		resource/texture/Player/launcher_dive.png
+
+#FX
+texture	    Shield			resource/texture/FX/Shield.png
+texture	    ShieldFadeOut		resource/texture/FX/ShieldFadeOut.png
+
+
+#Other
+texture 	NTiles					resource/texture/NTiles.png
+
+texture 	canister				resource/texture/canister.png
+texture 	smoke					resource/texture/smoke.png
+texture 	cross					resource/texture/cross.png
+texture 	KeyBoardLayout				resource/texture/UI/KeyBoardLayout.png
+
+texture 	magazine				resource/texture/magazine.png
+
+#Icons
+texture 	NoneIcon				resource/texture/Icons/None.png
+texture 	BombIcon				resource/texture/Icons/Bomb.png
+texture 	PoisonBombIcon				resource/texture/Icons/PoisonBomb.png	
+texture	PotionIcon				resource/texture/item/potion.png
+texture	PotionUIIcon				resource/texture/Icons/PotionIcon.png
+
+texture 	PoisonBombUIIcon				resource/texture/item/poison_icon.png	
+texture	BombUIIcon				resource/texture/item/bomb_UI_icon.png
+
+texture 	DaggerUIIcon				resource/texture/Icons/Dagger.png
+texture 	DefaultGunIcon				resource/texture/Icons/DefaultGun.png
+texture 	ShotGunUIIcon				resource/texture/Icons/Shotgun.png	
+texture	RocketUIIcon				resource/texture/Icons/launcherUI_icon.png
+texture 	Empty					resource/texture/Icons/Empty.png	
+texture 	Black					resource/texture/Icons/Black.png
+texture	Box					resource/texture/Icons/Box.png
+texture	NormalCubeIcon					resource/texture/Icons/NormalCube.png
+texture	FullCubeIcon					resource/texture/Icons/FullCube.png
+
+#Used by outside
+texture		GunIcon					resource/texture/weapon/gun_icon.png
+# ------------------------------
+# Animations
+# ------------------------------
+animation 	TestAnimation							resource/animation/test_anim.anm
+
+animation 	PortalAnim					resource/animation/UI/portal_anim.anm
+animation 	EndPortalAnim					resource/animation/UI/end_portal_anim.anm							
+
+
+animation	DefaultGunIdleAnim						resource/animation/weapon/gun0.anm
+animation	DefaultGunFireAnim						resource/animation/weapon/gun_fire.anm
+
+animation	BombThrownAnim							resource/animation/item/bomb_thrown.anm
+animation	BombExplodeAnim							resource/animation/item/bomb_explode.anm
+animation	ExplodePurpleAnim			resource/animation/explode/ExplodePurple.anm
+animation	ExplodeVerticalAnim			resource/animation/explode/ExplodeVertical.anm
+animation	ExplodeVerticalPoisonAnim			resource/animation/explode/ExplodeVerticalPoison.anm
+animation	ExplodeVerticalFlameAnim			resource/animation/explode/ExplodeVerticalFlame.anm
+animation	ExplodeRoundGreenAnim1			resource/animation/explode/ExplodeRoundGreen1.anm
+animation	ExplodeRoundGreenAnim2			resource/animation/explode/ExplodeRoundGreen2.anm
+animation	ExplodeRoundGreenAnim3			resource/animation/explode/ExplodeRoundGreen3.anm
+animation	ExplodeRoundGreenAnim4			resource/animation/explode/ExplodeRoundGreen4.anm
+animation	ExplodeVerticalSmallaAnim			resource/animation/explode/ExplodeVerticalSmalla.anm
+
+animation	ConsumeGreenAnim			resource/animation/fx/ConsumeGreen.anm
+animation	ConsumeBlueAnim			resource/animation/fx/ConsumeBlue.anm
+animation	PoisonAnim			resource/animation/fx/Poison.anm
+
+animation   NewPlayerIdleDaggerAnim            		resource/animation/player/player_idledagger.anm
+animation   NewPlayerIdleDaggerAttackAnim        	resource/animation/player/player_idledaggerattack.anm
+animation   NewPlayerIdleGunAnim            		resource/animation/player/player_idlegun.anm
+animation   NewPlayerIdleGunAttackAnim        		resource/animation/player/player_idlegunattack.anm
+animation   NewPlayerIdleShotGunAnim            		resource/animation/player/player_idleshotgun.anm
+animation   NewPlayerIdleShotGunAttackAnim        		resource/animation/player/player_idleshotgunattack.anm
+animation   NewPlayerIdleRocketAnim            		resource/animation/player/player_idlerocket.anm
+animation   NewPlayerIdleRocketAttackAnim        		resource/animation/player/player_idlerocketattack.anm
+
+animation   NewPlayerRunningDaggerAnim        		resource/animation/player/player_walkdagger.anm
+animation   NewPlayerRunningDaggerAttackAnim    	resource/animation/player/player_walkdaggerattack.anm
+animation   NewPlayerRunningGunAnim            		resource/animation/player/player_walkgun.anm
+animation   NewPlayerRunningGunAttackAnim        	resource/animation/player/player_walkgunattack.anm
+animation   NewPlayerRunningShotGunAnim            	resource/animation/player/player_walkshotgun.anm
+animation   NewPlayerRunningShotGunAttackAnim        	resource/animation/player/player_walkshotgunattack.anm
+animation   NewPlayerRunningRocketAnim            		resource/animation/player/player_walkrocket.anm
+animation   NewPlayerRunningRocketAttackAnim        	resource/animation/player/player_walkrocketattack.anm
+
+animation   NewPlayerJumpingGunAnim            		resource/animation/player/player_jumpgun.anm
+animation   NewPlayerJumpingGunAttackAnim        	resource/animation/player/player_walkgunattack.anm
+animation   NewPlayerJumpingDaggerAnim       	 	resource/animation/player/player_jumpdagger.anm
+animation   NewPlayerJumpingDaggerAttackAnim    	resource/animation/player/player_jumpdaggerattack.anm
+animation   NewPlayerJumpingShotGunAnim		resource/animation/player/player_jumpshotgun.anm
+animation   NewPlayerJumpingShotGunAttackAnim	resource/animation/player/player_walkshotgunattack.anm
+animation   NewPlayerJumpingRocketAnim            		resource/animation/player/player_jumprocket.anm
+animation   NewPlayerJumpingRocketAttackAnim        	resource/animation/player/player_walkrocketattack.anm
+
+animation   NewPlayerFallingDaggerAnim        		resource/animation/player/player_falldagger.anm
+animation   NewPlayerFallingDaggerAttackAnim    	resource/animation/player/player_fallingdaggerattack.anm
+animation   NewPlayerFallingGunAnim            		resource/animation/player/player_fallgun.anm
+animation   NewPlayerFallingGunAttackAnim        	resource/animation/player/player_walkgunattack.anm
+animation   NewPlayerFallingShotGunAnim            	resource/animation/player/player_fallshotgun.anm
+animation   NewPlayerFallingShotGunAttackAnim        	resource/animation/player/player_walkshotgunattack.anm
+animation   NewPlayerFallingRocketAnim            		resource/animation/player/player_fallrocket.anm
+animation   NewPlayerFallingRocketAttackAnim        	resource/animation/player/player_walkrocketattack.anm
+
+animation   NewPlayerClimbingGunAnim			resource/animation/player/player_climbgun.anm
+animation   NewPlayerClimbingUpDaggerAnim		resource/animation/player/player_climbdagger.anm
+animation   NewPlayerClimbingRocketAnim			resource/animation/player/player_climbgun.anm
+
+animation   NewPlayerClimbingDownDaggerAnim		resource/animation/player/player_climbdagger.anm
+animation   NewPlayerClimbingDownGunAnim		resource/animation/player/player_climbdagger.anm
+animation   NewPlayerClimbingDownShotGunAnim	resource/animation/player/player_climbdagger.anm
+animation   NewPlayerClimbingDownRocketAnim		resource/animation/player/player_climbdagger.anm
+
+animation   NewPlayerClimbingUpGunAnim			resource/animation/player/player_climbdagger.anm
+animation   NewPlayerClimbingUpShotGunAnim		resource/animation/player/player_climbdagger.anm
+animation   NewPlayerClimbingUpRocketAnim			resource/animation/player/player_climbdagger.anm
+
+animation   NewPlayerClimbingDaggerStartAnim		resource/animation/player/player_climbdaggerstart.anm
+animation   NewPlayerClimbingGunStartAnim		resource/animation/player/player_climbgunstart.anm
+animation   NewPlayerClimbingShotGunStartAnim	resource/animation/player/player_climbgunstart.anm
+animation   NewPlayerClimbingRocketStartAnim		resource/animation/player/player_climbgunstart.anm
+
+animation   NewPlayerIsDeadAnim				resource/animation/player/player_isdead.anm
+
+animation   NewPlayerSlidingDaggerAnim			resource/animation/player/player_slidedagger.anm
+animation   NewPlayerSlidingDaggerAttackAnim		resource/animation/player/player_slidedagger.anm
+animation   NewPlayerSlidingGunAnim			resource/animation/player/player_slidegun.anm
+animation   NewPlayerSlidingGunAttackAnim		resource/animation/player/player_slidegunattack.anm
+animation   NewPlayerSlidingShotGunAnim		resource/animation/player/player_slideshotgun.anm
+animation   NewPlayerSlidingShotGunAttackAnim	resource/animation/player/player_slideshotgunattack.anm
+animation   NewPlayerSlidingRocketAnim			resource/animation/player/player_sliderocket.anm
+animation   NewPlayerSlidingRocketAttackAnim		resource/animation/player/player_sliderocketattack.anm
+
+animation   NewPlayerBeeingGunAnim			resource/animation/player/player_divegun.anm
+animation   NewPlayerBeeingDaggerAnim			resource/animation/player/player_divedagger.anm
+animation   NewPlayerBeeingShotGunAnim		resource/animation/player/player_diveshotgun.anm
+animation   NewPlayerBeeingRocketAnim			resource/animation/player/player_diverocket.anm
+
+
+animation   BulletAnim							resource/animation/enemy/bullet.anm
+
+animation	WarriorMissingAnim						resource/animation/enemy/warrior_missing.anm
+animation	WarriorChasingAnim						resource/animation/enemy/warrior_chasing.anm
+animation	WarriorAttackingAnim					resource/animation/enemy/warrior_attacking.anm
+animation	WarriorHurtingAnim						resource/animation/enemy/warrior_hurting.anm
+animation	WarriorDyingAnim						resource/animation/enemy/warrior_dying.anm
+
+animation	TankerMissingAnim						resource/animation/enemy/tanker_missing.anm
+animation	TankerArmingAnim						resource/animation/enemy/tanker_arming.anm
+animation	TankerDefendingAnim						resource/animation/enemy/tanker_defending.anm
+animation	TankerDisarmingAnim						resource/animation/enemy/tanker_disarming.anm
+animation	TankerAttackingAnim						resource/animation/enemy/tanker_attacking.anm
+animation	TankerHurtingAnim						resource/animation/enemy/tanker_hurting.anm
+animation	TankerDyingAnim							resource/animation/enemy/tanker_dying.anm
+
+animation	ScoutMissingAnim						resource/animation/enemy/scout_missing.anm
+animation	ScoutChasingAnim						resource/animation/enemy/scout_chasing.anm
+animation	ScoutAttackingAnim						resource/animation/enemy/scout_attacking.anm
+animation	ScoutHurtingAnim						resource/animation/enemy/scout_hurting.anm
+animation	ScoutDyingAnim							resource/animation/enemy/scout_dying.anm
+
+
+animation	BigBoyAttackingAnim					resource/animation/enemy/BigBoy/BigBoyAttack.anm
+animation	BigBoyDyingAnim						resource/animation/enemy/BigBoy/BigBoyDeath.anm
+animation	BigBoyHurtingAnim					resource/animation/enemy/BigBoy/BigBoyHurt.anm
+animation	BigBoyIdleAnim						resource/animation/enemy/BigBoy/BigBoyIdle.anm
+animation	BigBoyWalkingAnim					resource/animation/enemy/BigBoy/BigBoyWalk.anm
+
+animation	EngineerAttackingAnim					resource/animation/enemy/Engineer/EngineerAttack.anm
+animation	EngineerDyingAnim					resource/animation/enemy/Engineer/EngineerDeath.anm
+animation	EngineerHurtingAnim					resource/animation/enemy/Engineer/EngineerHurt.anm
+animation	EngineerIdleAnim						resource/animation/enemy/Engineer/EngineerIdle.anm
+animation	EngineerJumpingAnim					resource/animation/enemy/Engineer/EngineerJump.anm
+animation	EngineerWalkingAnim					resource/animation/enemy/Engineer/EngineerWalk.anm
+animation	SummonAnim						resource/animation/enemy/Engineer/Summon.anm
+animation	SummonBigBoyAnim					resource/animation/enemy/Engineer/SummonBigBoy.anm
+
+animation	FlamethrowerBotAttackingAnim				resource/animation/enemy/FlamethrowerBot/FlamethrowerBotAttack.anm
+animation	FlamethrowerBotDyingAnim					resource/animation/enemy/FlamethrowerBot/FlamethrowerBotDeath.anm
+animation	FlamethrowerBotHurtingAnim				resource/animation/enemy/FlamethrowerBot/FlamethrowerBotHurt.anm
+animation	FlamethrowerBotIdleAnim					resource/animation/enemy/FlamethrowerBot/FlamethrowerBotIdle.anm
+animation	FlamethrowerBotPrepAttackingAnim				resource/animation/enemy/FlamethrowerBot/FlamethrowerBotPrepAttack.anm
+animation	FlamethrowerBotWalkingAnim				resource/animation/enemy/FlamethrowerBot/FlamethrowerBotWalk.anm
+
+animation	WardroidAttackingAnim					resource/animation/enemy/Wardroid/WardroidAttack.anm
+animation	WardroidDyingAnim					resource/animation/enemy/Wardroid/WardroidDeath.anm
+animation	WardroidHurtingAnim					resource/animation/enemy/Wardroid/WardroidHurt.anm
+animation	WardroidIdleAnim						resource/animation/enemy/Wardroid/WardroidIdle.anm
+animation	WardroidWakeAnim					resource/animation/enemy/Wardroid/WardroidWake.anm
+animation	WardroidWalkingAnim					resource/animation/enemy/Wardroid/WardroidWalk.anm
+
+animation	AssassinAttackingAnim					resource/animation/enemy/Assassin/AssassinAttack.anm
+animation	AssassinDyingAnim						resource/animation/enemy/Assassin/AssassinDeath.anm
+animation	AssassinHurtingAnim					resource/animation/enemy/Assassin/AssassinHurt.anm
+animation	AssassinIdleAnim						resource/animation/enemy/Assassin/AssassinIdle.anm
+animation	AssassinTelePortAnim					resource/animation/enemy/Assassin/AssassinTelePort.anm
+animation	AssassinWalkingAnim					resource/animation/enemy/Assassin/AssassinWalk.anm
+
+animation	ShieldAnim							resource/animation/fx/Shield.anm
+animation	ShieldFadeOutAnim						resource/animation/fx/ShieldFadeOut.anm
+
+# ------------------------------
+# Fonts
+# ------------------------------
+font	ArialFont			resource/font/arial.ttf
+font	MenuFont			resource/font/Imposter.ttf
+

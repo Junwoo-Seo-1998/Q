@@ -1,0 +1,16 @@
+1 5 true
+PlayerGunWalkAttack 0 0 40 42 0.1
+PlayerGunWalkAttack 40 0 60 42 0.1
+PlayerGunWalkAttack 100 0 60 42 0.1
+PlayerGunWalkAttack 160 0 60 42 0.1
+PlayerGunWalkAttack 220 0 40 42 0.1
+PlayerGunWalk 0 0 40 42 0.1
+PlayerGunWalk 40 0 40 42 0.1
+PlayerGunWalk 80 0 40 42 0.1
+PlayerGunWalk 120 0 40 42 0.1
+PlayerGunWalk 160 0 40 42 0.1
+PlayerGunWalk 200 0 40 42 0.1
+PlayerGunWalk 240 0 60 42 0.1
+PlayerGunWalk 300 0 60 42 0.1
+PlayerGunWalk 360 0 40 42 0.1
+PlayerGunWalk 400 0 40 42 0.1

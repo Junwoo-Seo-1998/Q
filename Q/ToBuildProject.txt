@@ -1,0 +1,2 @@
+simply you need to run Make-Solution.bat in order to generate visual stuido solution file (Q.sln)
+after then, use Q.sln file to compile. after you compile. please run CopyResource.bat to copy resources for the game.

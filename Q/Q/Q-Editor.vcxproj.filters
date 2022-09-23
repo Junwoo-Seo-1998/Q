@@ -1,0 +1,1523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Editor">
+      <UniqueIdentifier>{8C1A20B0-78BC-4A86-6177-5EDA4DB8D1D6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor\EditorState">
+      <UniqueIdentifier>{437546B7-2F59-070D-98B9-016084BCF18E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor\EngineComponent">
+      <UniqueIdentifier>{0476E7BF-F06F-1012-D9DC-A622C575767E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor\Graphics">
+      <UniqueIdentifier>{4C809837-B80B-06FC-C11C-89F02D2762FC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editor\ImGui">
+      <UniqueIdentifier>{B6482D3E-A2AB-BCE2-4B31-F59837738865}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{DBC7D3B0-C769-FE86-B024-12DB9C6585D7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Component">
+      <UniqueIdentifier>{FD6DB9BA-E966-D80C-1299-BD91FEF0B718}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core">
+      <UniqueIdentifier>{130D9B61-7FC2-1357-08B7-0D2E746B0A5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Debugger">
+      <UniqueIdentifier>{8F10366A-FB9B-A32E-04AD-262370B7FF2E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ECS">
+      <UniqueIdentifier>{A531F502-91E9-3650-FAF0-0FACE6C7D140}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Entity">
+      <UniqueIdentifier>{C70F2C39-33D0-A76F-FC0A-F1EC688AEC4B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Event">
+      <UniqueIdentifier>{6C812495-58E4-B339-016A-ECEFEDAB7FBC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Graphics">
+      <UniqueIdentifier>{7B960115-E721-6FD9-F032-F2CD5C3DCBD9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\ImGui">
+      <UniqueIdentifier>{45756795-31D8-F639-DA5D-2FF0C69FC2BC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Loader">
+      <UniqueIdentifier>{41C28749-AD82-0380-76BD-4CFDE23C485C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\RandomMap">
+      <UniqueIdentifier>{C9C965D3-B5C2-8425-DEF4-69AACA4C6431}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scripting">
+      <UniqueIdentifier>{9D0A0F60-8903-2EB2-B235-13379E8D0DBE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\System">
+      <UniqueIdentifier>{8FF69A5A-FBB6-1691-C4F1-5F0E30715B6D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{7FA9857C-6BE0-860D-14CD-6C1000E3020F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component">
+      <UniqueIdentifier>{A1AC5C82-8D7A-5088-760E-C1AE627B2CED}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component\EnemyStateSyscomps">
+      <UniqueIdentifier>{10F44C05-7C62-A284-C54B-5D8431F99720}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component\EnemyStateSyscomps\BomberStates">
+      <UniqueIdentifier>{6A01B2C7-567F-0261-3F77-C0F82B944489}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component\EnemyStateSyscomps\BossAssassinStates">
+      <UniqueIdentifier>{8F965641-7BD5-00BD-2458-DDEE1076B627}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component\EnemyStateSyscomps\BossMagicianStates">
+      <UniqueIdentifier>{63C59323-4F04-3E9F-F886-1AD1E4A4F309}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component\EnemyStateSyscomps\EngineerStates">
+      <UniqueIdentifier>{A0EE7D7A-8C97-E5A9-B52D-0129A13500EB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component\EnemyStateSyscomps\FlameThrowerStates">
+      <UniqueIdentifier>{E3559A4F-CF94-44CB-7817-21FD6435FA35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component\EnemyStateSyscomps\ScoutStates">
+      <UniqueIdentifier>{C1D893D3-2D49-964C-F667-10D56297CE4D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component\EnemyStateSyscomps\TankerStates">
+      <UniqueIdentifier>{D832270A-C4B0-77A3-ADA8-353B99C5B9CB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component\EnemyStateSyscomps\TurretStates">
+      <UniqueIdentifier>{F930EB4E-E5AE-3BE8-CEA6-F97FBAC37D10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component\EnemyStateSyscomps\WarriorStates">
+      <UniqueIdentifier>{1980B482-85BB-1446-8EB0-91D5FA6A9976}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Component\UIComponents">
+      <UniqueIdentifier>{D477D09D-4085-FE83-C96B-FA6E3578CA3A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Entity">
+      <UniqueIdentifier>{EB30030A-57E6-7BFF-E0DA-75D64C8F7203}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\Entity\UIEntities">
+      <UniqueIdentifier>{BDF19755-A9EB-C0A7-9258-57B87EF12614}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\JsonParser">
+      <UniqueIdentifier>{953789B1-01C3-F675-0AD4-796A76DE5276}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\System">
+      <UniqueIdentifier>{B317722B-1FCD-EA20-A8C1-E4F71476E124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\System\UI">
+      <UniqueIdentifier>{00B231DB-EC7F-25E1-D513-9607C1800146}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Levels">
+      <UniqueIdentifier>{30308DC0-1CD2-B796-058D-CBEAF1CD3EE7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{000BCD17-6C75-818E-B5B3-3234215D5FE3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Editor\EditorCamera.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorState\EditorScene.h">
+      <Filter>Editor\EditorState</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorState\UIEditorScene.h">
+      <Filter>Editor\EditorState</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EngineComponent\EditorComponent.h">
+      <Filter>Editor\EngineComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\Graphics\EditorDrawSystem.h">
+      <Filter>Editor\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\ImGui\ImGuiLayer.h">
+      <Filter>Editor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\ImGui\SceneHierarchyPanel.h">
+      <Filter>Editor\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\SceneSerializer.h">
+      <Filter>Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\AssetManager.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\BitShift.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\AnimationComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\CameraShakeComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\CollisionComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\ColorComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\DragAccelComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\FollowComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\GravityComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\InnerLuaScriptComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\LifeTimeComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\LuaScriptComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\ObjectStateComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\OffsetComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\RadiusComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\RaycastComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\SimpleActionComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\SoundComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\StateMoveComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\TagComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\TextComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\TextureBoxComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\TextureComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\TileMapComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\TransformComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\UserInputComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\VelocityComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Component\WidthHeightComponent.h">
+      <Filter>Engine\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\AStarPathFinding.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\BezierInterpolation.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\CanCollideData.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\ContiguousHashMap.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\ContiguousHashMap.inl">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\ContiguousHashMapIterator.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\ContiguousHashMapIterator.inl">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Event.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Event.inl">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\EventManager.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\EventManager.inl">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\IEvent.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Math.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Quadtree.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Quadtree.inl">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\RandomMachine.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\RandomMachine.inl">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Rect.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\StringHash.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\ThreadPool.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\ThreadPool.inl">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Core\Timer.h">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Debugger\Debugger.h">
+      <Filter>Engine\Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Debugger\FPS_Debugger.h">
+      <Filter>Engine\Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Debugger\Logger.h">
+      <Filter>Engine\Debugger</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ECS\Component.h">
+      <Filter>Engine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ECS\ComponentLoader.h">
+      <Filter>Engine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ECS\ComponentManager.h">
+      <Filter>Engine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ECS\ComponentManager.inl">
+      <Filter>Engine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ECS\Entity.h">
+      <Filter>Engine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ECS\EntityComponentMover.h">
+      <Filter>Engine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ECS\EntityComponentMover.inl">
+      <Filter>Engine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ECS\EntityManager.h">
+      <Filter>Engine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ECS\EntityManager.inl">
+      <Filter>Engine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ECS\IDGenerator.h">
+      <Filter>Engine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ECS\InputManager.h">
+      <Filter>Engine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ECS\System.h">
+      <Filter>Engine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ECS\SystemManager.h">
+      <Filter>Engine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ECS\SystemManager.inl">
+      <Filter>Engine\ECS</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Engine.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Engine.inl">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\EngineComponent.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Entity\CameraEntity.h">
+      <Filter>Engine\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Event\LambdaEvent.h">
+      <Filter>Engine\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Event\RayTriggerEvent.h">
+      <Filter>Engine\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Event\TriggerEvent.h">
+      <Filter>Engine\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\FileDialogs.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GameState.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GameStateManager.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\GameStateTypes.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Animation.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Color.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\DrawObject.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Drawing.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Font.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Framebuffer.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Graphics.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\GraphicsMisc.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Mesh.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Particle.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\PostProcessor.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Shader.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\ShaderProgram.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\TextObject.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Texture.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Graphics\Window.h">
+      <Filter>Engine\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\ImGui\ImGuiHelper.h">
+      <Filter>Engine\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Loader\Loader.h">
+      <Filter>Engine\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Profiler.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\RandomMap\MapGeneration.h">
+      <Filter>Engine\RandomMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Scripting\RegisterComponent.h">
+      <Filter>Engine\Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Scripting\RegisterDataType.h">
+      <Filter>Engine\Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Scripting\RegisterEnum.h">
+      <Filter>Engine\Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Scripting\RegisterMath.h">
+      <Filter>Engine\Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Scripting\ScriptManager.h">
+      <Filter>Engine\Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\System\AnimationUpdateDrawSystem.h">
+      <Filter>Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\System\CameraShakeUpdateSystem.h">
+      <Filter>Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\System\CollisionDebugDrawSystem.h">
+      <Filter>Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\System\CollisionResolveSystem.h">
+      <Filter>Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\System\CollisionSystem.h">
+      <Filter>Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\System\FollowSystem.h">
+      <Filter>Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\System\LambdaEventSystem.h">
+      <Filter>Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\System\OffsetSystem.h">
+      <Filter>Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\System\PhysicsSystem.h">
+      <Filter>Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\System\PlayerMovingSystem.h">
+      <Filter>Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\System\ScriptSystem.h">
+      <Filter>Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\System\SimpleActionSystem.h">
+      <Filter>Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\System\StateMoveSystem.h">
+      <Filter>Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\System\TextDrawSystem.h">
+      <Filter>Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\System\TextureBoxUpdateSystem.h">
+      <Filter>Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\System\TextureDrawSystem.h">
+      <Filter>Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\System\TimerManagerSystem.h">
+      <Filter>Engine\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Types.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\BossAssassinComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\BossMagicianComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\DamageComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\DeathItemDropComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\DropCubeComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\DropItemComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\DropWeaponComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\BomberStates\BomberChasingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\BomberStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\BomberStates\BomberDyingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\BomberStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\BomberStates\BomberExplodingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\BomberStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\BomberStates\BomberMissingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\BomberStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\BomberStates\BomberSearchingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\BomberStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\BossAssassinStates\BossAssassinAttack1State.h">
+      <Filter>Game\Component\EnemyStateSyscomps\BossAssassinStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\BossAssassinStates\BossAssassinAttack2State.h">
+      <Filter>Game\Component\EnemyStateSyscomps\BossAssassinStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\BossAssassinStates\BossAssassinAttack3State.h">
+      <Filter>Game\Component\EnemyStateSyscomps\BossAssassinStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\BossAssassinStates\BossAssassinAttack4State.h">
+      <Filter>Game\Component\EnemyStateSyscomps\BossAssassinStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\BossAssassinStates\BossAssassinChangePatternState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\BossAssassinStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\BossAssassinStates\BossAssassinDyingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\BossAssassinStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\BossAssassinStates\BossAssassinHelperFunctions.h">
+      <Filter>Game\Component\EnemyStateSyscomps\BossAssassinStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\BossMagicianStates\BossHelperFunctions.h">
+      <Filter>Game\Component\EnemyStateSyscomps\BossMagicianStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\BossMagicianStates\BossMagicianAttack1State.h">
+      <Filter>Game\Component\EnemyStateSyscomps\BossMagicianStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\BossMagicianStates\BossMagicianAttack2State.h">
+      <Filter>Game\Component\EnemyStateSyscomps\BossMagicianStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\BossMagicianStates\BossMagicianAttack3State.h">
+      <Filter>Game\Component\EnemyStateSyscomps\BossMagicianStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\BossMagicianStates\BossMagicianAttack4State.h">
+      <Filter>Game\Component\EnemyStateSyscomps\BossMagicianStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\BossMagicianStates\BossMagicianChangePatternState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\BossMagicianStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\BossMagicianStates\BossMagicianDyingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\BossMagicianStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\EnemySettingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\EnemyStateHelper.h">
+      <Filter>Game\Component\EnemyStateSyscomps</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\EngineerStates\EngineerAttackingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\EngineerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\EngineerStates\EngineerDyingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\EngineerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\EngineerStates\EngineerHurtingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\EngineerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\EngineerStates\EngineerMissingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\EngineerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\EngineerStates\EngineerRunningState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\EngineerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\EngineerStates\EngineerSummoningState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\EngineerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\FlameThrowerStates\FlameThrowerAttackingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\FlameThrowerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\FlameThrowerStates\FlameThrowerChasingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\FlameThrowerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\FlameThrowerStates\FlameThrowerDyingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\FlameThrowerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\FlameThrowerStates\FlameThrowerHurtingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\FlameThrowerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\FlameThrowerStates\FlameThrowerMissingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\FlameThrowerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\FlameThrowerStates\FlameThrowerSearchingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\FlameThrowerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\IEnemyState.h">
+      <Filter>Game\Component\EnemyStateSyscomps</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\ScoutStates\ScoutAttackingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\ScoutStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\ScoutStates\ScoutChasingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\ScoutStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\ScoutStates\ScoutDyingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\ScoutStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\ScoutStates\ScoutHurtingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\ScoutStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\ScoutStates\ScoutMissingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\ScoutStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\ScoutStates\ScoutSearchingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\ScoutStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\ScoutStates\ScoutStateHelper.h">
+      <Filter>Game\Component\EnemyStateSyscomps\ScoutStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\TankerStates\TankerArmingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\TankerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\TankerStates\TankerAttackingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\TankerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\TankerStates\TankerDefendingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\TankerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\TankerStates\TankerDyingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\TankerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\TankerStates\TankerHurtingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\TankerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\TankerStates\TankerMissingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\TankerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\TankerStates\TankerSearchingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\TankerStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\TurretStates\TurretAttackingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\TurretStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\TurretStates\TurretDyingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\TurretStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\TurretStates\TurretMissingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\TurretStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\TurretStates\TurretSummoningState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\TurretStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\WarriorStates\WarriorAttackingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\WarriorStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\WarriorStates\WarriorChasingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\WarriorStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\WarriorStates\WarriorDyingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\WarriorStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\WarriorStates\WarriorHurtingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\WarriorStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\WarriorStates\WarriorMissingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\WarriorStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyStateSyscomps\WarriorStates\WarriorSearchingState.h">
+      <Filter>Game\Component\EnemyStateSyscomps\WarriorStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\EnemyWeaponComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\FXAnimLuaScriptsComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\HealthComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\JumpTriggerComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\NewItemComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\NewPlayerInventorySlots.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\NewWeaponComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\ProjectileScriptComponent.h">
+      <Filter>Game\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\UIComponents\ButtonComponent.h">
+      <Filter>Game\Component\UIComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Component\UIComponents\UIItemComponents.h">
+      <Filter>Game\Component\UIComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Entity\BombEntity.h">
+      <Filter>Game\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Entity\BulletEntity.h">
+      <Filter>Game\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Entity\ItemEntity.h">
+      <Filter>Game\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Entity\JumpTriggerEntity.h">
+      <Filter>Game\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Entity\MapEntity.h">
+      <Filter>Game\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Entity\PhysicsTestEntities.h">
+      <Filter>Game\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Entity\ProjectileEntity.h">
+      <Filter>Game\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Entity\SimpleEntity.h">
+      <Filter>Game\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Entity\UIEntities.h">
+      <Filter>Game\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Entity\UIEntities\InGameEntities.h">
+      <Filter>Game\Entity\UIEntities</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Entity\UIEntities\UserFocusEntity.h">
+      <Filter>Game\Entity\UIEntities</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Entity\UITestEntities.h">
+      <Filter>Game\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Entity\WeaponEntity.h">
+      <Filter>Game\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\JsonParser\MapJsonParser.h">
+      <Filter>Game\JsonParser</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\BombExplodeSystem.h">
+      <Filter>Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\CamLockUpdateSystem.h">
+      <Filter>Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\CubePickUpSystem.h">
+      <Filter>Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\DamageSystem.h">
+      <Filter>Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\DropItemVisualSystem.h">
+      <Filter>Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\EnemyStateSystem.h">
+      <Filter>Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\EnemyWeaponSystem.h">
+      <Filter>Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\FXAnimLuaScriptsUpdateSystem.h">
+      <Filter>Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\GamePlayLogicUpdateSystem.h">
+      <Filter>Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\ItemPickUpSystem.h">
+      <Filter>Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\LuaColliderDispatcherSystem.h">
+      <Filter>Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\NewPlayerInventorySystem.h">
+      <Filter>Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\PlayerItemSystem.h">
+      <Filter>Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\PlayerWeaponSystem.h">
+      <Filter>Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\ProjectileSystem.h">
+      <Filter>Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\StarBGUpdateDrawSystem.h">
+      <Filter>Game\System</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\UI\ButtonManagingSystem.h">
+      <Filter>Game\System\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\UI\PlayerHealthBarUpdateSystem.h">
+      <Filter>Game\System\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\UI\PlayerItemUIUpdateDrawSystem.h">
+      <Filter>Game\System\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\UI\PlayerWeaponUIUpdateDrawSystem.h">
+      <Filter>Game\System\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\System\UI\TutorialFlowSystem.h">
+      <Filter>Game\System\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\Boss1State.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\Boss2State.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\CreditState.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\GameEndingState.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\GameOverState.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\HowToPlayState.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\InGameMenuState.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\InGameOptionMenuState.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\Level1State.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\Level2State.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\Level3State.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\Level4State.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\Level5State.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\Level6State.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\Level7State.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\LevelHeaders.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\LevelHeaders.inl">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\MainMenuState.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\OptionMenuState.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\SplashState.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\StoryState.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\TutorialState.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\UITestState.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="Levels\WaitingState.h">
+      <Filter>Levels</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayTestTrace.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Editor\Editor-Main.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EditorCamera.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EditorState\EditorScene.cpp">
+      <Filter>Editor\EditorState</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EditorState\UIEditorScene.cpp">
+      <Filter>Editor\EditorState</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EngineComponent\EditorComponent.cpp">
+      <Filter>Editor\EngineComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\Graphics\EditorDrawSystem.cpp">
+      <Filter>Editor\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\ImGui\ImGuiLayer.cpp">
+      <Filter>Editor\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\ImGui\SceneHierarchyPanel.cpp">
+      <Filter>Editor\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\SceneSerializer.cpp">
+      <Filter>Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\AssetManager.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component\AnimationComponent.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component\CameraShakeComponent.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component\CollisionComponent.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component\ColorComponent.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component\DragAccelComponent.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component\FollowComponent.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component\GravityComponent.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component\InnerLuaScriptComponent.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component\LuaScriptComponent.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component\ObjectStateComponent.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component\OffsetComponent.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component\RaycastComponent.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component\SimpleActionComponent.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component\SoundComponent.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component\TextComponent.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component\TextureComponent.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component\TileMapComponent.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component\TransformComponent.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component\VelocityComponent.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Component\WidthHeightComponent.cpp">
+      <Filter>Engine\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\AStarPathFinding.cpp">
+      <Filter>Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\BezierInterpolation.cpp">
+      <Filter>Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\RandomMachine.cpp">
+      <Filter>Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\Rect.cpp">
+      <Filter>Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\ThreadPool.cpp">
+      <Filter>Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Core\Timer.cpp">
+      <Filter>Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Debugger\Debugger.cpp">
+      <Filter>Engine\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Debugger\FPS_Debugger.cpp">
+      <Filter>Engine\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Debugger\Logger.cpp">
+      <Filter>Engine\Debugger</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\ECS\ComponentManager.cpp">
+      <Filter>Engine\ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\ECS\InputManager.cpp">
+      <Filter>Engine\ECS</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Engine.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Entity\CameraEntity.cpp">
+      <Filter>Engine\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Event\TriggerEvent.cpp">
+      <Filter>Engine\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\FileDialogs.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GameState.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\GameStateManager.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Animation.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\DrawObject.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Drawing.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Font.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Framebuffer.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\GraphicsMisc.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Mesh.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Particle.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\PostProcessor.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Shader.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\ShaderProgram.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\TextObject.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Texture.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Graphics\Window.cpp">
+      <Filter>Engine\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\ImGui\ImGuiHelper.cpp">
+      <Filter>Engine\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\ImGui\imGuiBuilder.cpp">
+      <Filter>Engine\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Loader\Loader.cpp">
+      <Filter>Engine\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Profiler.cpp">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\RandomMap\MapGeneration.cpp">
+      <Filter>Engine\RandomMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Scripting\RegisterComponent.cpp">
+      <Filter>Engine\Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Scripting\RegisterDataType.cpp">
+      <Filter>Engine\Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Scripting\RegisterEnum.cpp">
+      <Filter>Engine\Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Scripting\RegisterMath.cpp">
+      <Filter>Engine\Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Scripting\ScriptManager.cpp">
+      <Filter>Engine\Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\System\AnimationUpdateDrawSystem.cpp">
+      <Filter>Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\System\CameraShakeUpdateSystem.cpp">
+      <Filter>Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\System\CollisionDebugDrawSystem.cpp">
+      <Filter>Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\System\CollisionResolveSystem.cpp">
+      <Filter>Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\System\CollisionSystem.cpp">
+      <Filter>Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\System\FollowSystem.cpp">
+      <Filter>Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\System\LambdaEventSystem.cpp">
+      <Filter>Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\System\OffsetSystem.cpp">
+      <Filter>Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\System\PhysicsSystem.cpp">
+      <Filter>Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\System\PlayerMovingSystem.cpp">
+      <Filter>Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\System\ScriptSystem.cpp">
+      <Filter>Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\System\SimpleActionSystem.cpp">
+      <Filter>Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\System\StateMoveSystem.cpp">
+      <Filter>Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\System\TextDrawSystem.cpp">
+      <Filter>Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\System\TextureBoxUpdateSystem.cpp">
+      <Filter>Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\System\TextureDrawSystem.cpp">
+      <Filter>Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\System\TimerManagerSystem.cpp">
+      <Filter>Engine\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\DamageComponent.cpp">
+      <Filter>Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\BomberStates\BomberChasingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\BomberStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\BomberStates\BomberDyingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\BomberStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\BomberStates\BomberExplodingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\BomberStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\BomberStates\BomberMissingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\BomberStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\BomberStates\BomberSearchingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\BomberStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\BossAssassinStates\BossAssassinAttack1State.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\BossAssassinStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\BossAssassinStates\BossAssassinAttack2State.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\BossAssassinStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\BossAssassinStates\BossAssassinAttack3State.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\BossAssassinStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\BossAssassinStates\BossAssassinAttack4State.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\BossAssassinStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\BossAssassinStates\BossAssassinChangePatternState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\BossAssassinStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\BossAssassinStates\BossAssassinDyingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\BossAssassinStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\BossAssassinStates\BossAssassinHelperFunctions.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\BossAssassinStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\BossMagicianStates\BossHelperFunctions.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\BossMagicianStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\BossMagicianStates\BossMagicianAttack1State.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\BossMagicianStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\BossMagicianStates\BossMagicianAttack2State.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\BossMagicianStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\BossMagicianStates\BossMagicianAttack3State.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\BossMagicianStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\BossMagicianStates\BossMagicianAttack4State.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\BossMagicianStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\BossMagicianStates\BossMagicianChangePatternState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\BossMagicianStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\BossMagicianStates\BossMagicianDyingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\BossMagicianStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\EnemySettingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\EnemyStateHelper.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\EngineerStates\EngineerAttackingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\EngineerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\EngineerStates\EngineerDyingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\EngineerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\EngineerStates\EngineerHurtingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\EngineerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\EngineerStates\EngineerMissingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\EngineerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\EngineerStates\EngineerRunningState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\EngineerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\EngineerStates\EngineerSummoningState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\EngineerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\FlameThrowerStates\FlameThrowerAttackingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\FlameThrowerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\FlameThrowerStates\FlameThrowerChasingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\FlameThrowerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\FlameThrowerStates\FlameThrowerDyingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\FlameThrowerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\FlameThrowerStates\FlameThrowerHurtingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\FlameThrowerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\FlameThrowerStates\FlameThrowerMissingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\FlameThrowerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\FlameThrowerStates\FlameThrowerSearchingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\FlameThrowerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\IEnemyState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\ScoutStates\ScoutAttackingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\ScoutStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\ScoutStates\ScoutChasingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\ScoutStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\ScoutStates\ScoutDyingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\ScoutStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\ScoutStates\ScoutHurtingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\ScoutStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\ScoutStates\ScoutMissingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\ScoutStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\ScoutStates\ScoutSearchingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\ScoutStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\ScoutStates\ScoutStateHelper.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\ScoutStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\TankerStates\TankerArmingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\TankerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\TankerStates\TankerAttackingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\TankerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\TankerStates\TankerDefendingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\TankerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\TankerStates\TankerDyingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\TankerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\TankerStates\TankerHurtingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\TankerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\TankerStates\TankerMissingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\TankerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\TankerStates\TankerSearchingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\TankerStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\TurretStates\TurretAttackingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\TurretStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\TurretStates\TurretDyingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\TurretStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\TurretStates\TurretMissingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\TurretStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\TurretStates\TurretSummoningState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\TurretStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\WarriorStates\WarriorAttackingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\WarriorStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\WarriorStates\WarriorChasingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\WarriorStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\WarriorStates\WarriorDyingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\WarriorStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\WarriorStates\WarriorHurtingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\WarriorStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\WarriorStates\WarriorMissingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\WarriorStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyStateSyscomps\WarriorStates\WarriorSearchingState.cpp">
+      <Filter>Game\Component\EnemyStateSyscomps\WarriorStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\EnemyWeaponComponent.cpp">
+      <Filter>Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\FXAnimLuaScriptsComponent.cpp">
+      <Filter>Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\HealthComponent.cpp">
+      <Filter>Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\NewItemComponent.cpp">
+      <Filter>Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\NewPlayerInventorySlots.cpp">
+      <Filter>Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\NewWeaponComponent.cpp">
+      <Filter>Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\Component\ProjectileScriptComponent.cpp">
+      <Filter>Game\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\JsonParser\MapJsonParser.cpp">
+      <Filter>Game\JsonParser</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\JsonParser\jsoncpp.cpp">
+      <Filter>Game\JsonParser</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\BombExplodeSystem.cpp">
+      <Filter>Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\CamLockUpdateSystem.cpp">
+      <Filter>Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\CubePickUpSystem.cpp">
+      <Filter>Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\DamageSystem.cpp">
+      <Filter>Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\DropItemVisualSystem.cpp">
+      <Filter>Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\EnemyStateSystem.cpp">
+      <Filter>Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\EnemyWeaponSystem.cpp">
+      <Filter>Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\FXAnimLuaScriptsUpdateSystem.cpp">
+      <Filter>Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\GamePlayLogicUpdateSystem.cpp">
+      <Filter>Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\ItemPickUpSystem.cpp">
+      <Filter>Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\LuaColliderDispatcherSystem.cpp">
+      <Filter>Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\NewPlayerInventorySystem.cpp">
+      <Filter>Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\PlayerItemSystem.cpp">
+      <Filter>Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\PlayerWeaponSystem.cpp">
+      <Filter>Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\ProjectileSystem.cpp">
+      <Filter>Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\StarBGUpdateDrawSystem.cpp">
+      <Filter>Game\System</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\UI\ButtonManagingSystem.cpp">
+      <Filter>Game\System\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\UI\PlayerHealthBarUpdateSystem.cpp">
+      <Filter>Game\System\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\UI\PlayerItemUIUpdateDrawSystem.cpp">
+      <Filter>Game\System\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\UI\PlayerWeaponUIUpdateDrawSystem.cpp">
+      <Filter>Game\System\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Game\System\UI\TutorialFlowSystem.cpp">
+      <Filter>Game\System\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\Boss1State.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\Boss2State.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\CreditState.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\GameEndingState.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\GameOverState.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\HowToPlayState.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\InGameMenuState.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\InGameOptionMenuState.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\Level1State.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\Level2State.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\Level3State.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\Level4State.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\Level5State.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\Level6State.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\Level7State.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\MainMenuState.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\OptionMenuState.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\SplashState.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\StoryState.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\TutorialState.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\UITestState.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="Levels\WaitingState.cpp">
+      <Filter>Levels</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayTestTrace.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\q_icon_WG1_icon.ico">
+      <Filter>Resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Q.rc" />
+  </ItemGroup>
+</Project>

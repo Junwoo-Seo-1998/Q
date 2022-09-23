@@ -1,0 +1,5 @@
+1 -1 true
+PlayerGunWalk 0 0 40 42 0.1
+PlayerGunWalk 40 0 40 42 0.1
+PlayerGunWalk 80 0 40 42 0.1
+PlayerDaggerClimbing 0 0 20 50 0.1

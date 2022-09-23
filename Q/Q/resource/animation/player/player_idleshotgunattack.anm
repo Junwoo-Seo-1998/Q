@@ -1,0 +1,6 @@
+1 -1 true
+PlayerShotGunIdleAttack 0 0 40 42 0.1
+PlayerShotGunIdleAttack 40 0 40 42 0.1
+PlayerShotGunIdleAttack 80 0 40 42 0.1
+PlayerShotGunIdleAttack 120 0 40 42 0.1
+PlayerShotGunIdleAttack 160 0 40 42 0.1

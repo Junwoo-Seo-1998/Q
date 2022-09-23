@@ -1,0 +1,19 @@
+1 7 true
+PlayerDaggerIdleAttack1 0 0 40 42 0.04
+PlayerDaggerIdleAttack1 40 0 60 42 0.04
+PlayerDaggerIdleAttack1 100 0 60 42 0.04
+PlayerDaggerIdleAttack1 160 0 60 42 0.04
+PlayerDaggerIdleAttack1 220 0 60 42 0.1
+PlayerDaggerIdleAttack1 280 0 40 42 0.04
+PlayerDaggerIdleAttack1 320 0 40 42 0.04
+PlayerDaggerJumping 0 0 40 42 0.13
+PlayerDaggerWalk 0 0 40 42 0.1
+PlayerDaggerWalk 40 0 40 42 0.1
+PlayerDaggerWalk 80 0 40 42 0.1
+PlayerDaggerWalk 120 0 40 42 0.1
+PlayerDaggerWalk 160 0 40 42 0.1
+PlayerDaggerWalk 200 0 40 42 0.1
+PlayerDaggerWalk 240 0 40 42 0.1
+PlayerDaggerWalk 280 0 40 42 0.1
+PlayerDaggerWalk 320 0 40 42 0.1
+PlayerDaggerWalk 360 0 40 42 0.1

@@ -1,0 +1,5 @@
+1 -1 true
+PlayerDaggerWalk 0 0 40 42 0.1
+PlayerDaggerWalk 40 0 40 42 0.1
+PlayerDaggerWalk 80 0 40 42 0.1
+PlayerDaggerClimbing 0 0 20 50 0.1
